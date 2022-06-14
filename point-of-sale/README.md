@@ -1,8 +1,8 @@
-# StreamPay - Point of Sale
+# Point of Sale
 
 This is an example of how you can use the `@solana/pay` JavaScript library to create a simple point of sale system.
 
-You can [check out the app](https://pos.streampayment.app?recipient=GvHeR432g7MjN9uKyX3Dzg66TqwrEWgANLnnFZXMeyyj&label=Solana+Pay), use the code as a reference, or run it yourself to start accepting decentralized payments in-person.
+You can [check out the app](https://app.solanapay.com?recipient=GvHeR432g7MjN9uKyX3Dzg66TqwrEWgANLnnFZXMeyyj&label=Solana+Pay), use the code as a reference, or run it yourself to start accepting decentralized payments in-person.
 
 ## Prerequisites
 
@@ -42,17 +42,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 #### With Git
 ```shell
-git clone https://github.com/stream-protocol/stream-pay-pos.git
+git clone https://github.com/solana-labs/solana-pay.git
 ```
 
 #### With Github CLI
 ```shell
-gh repo clone stream-protocol/stream-pay-pos
+gh repo clone solana-labs/solana-pay
 ```
 
 ### Install dependencies
 ```shell
-cd solana-pay-pos/point-of-sale
+cd solana-pay/point-of-sale
 yarn install
 ```
 
@@ -74,7 +74,7 @@ open "https://localhost:3001?recipient=Your+Merchant+Address&label=Your+Store+Na
 You may need to accept a locally signed SSL certificate to open the page.
 
 ## Accepting USDC on Mainnet
-Import the Mainnet endpoint, along with USDC's mint address and icon in the [`client/components/pages/App.tsx`](https://github.com/stream-protocol/stream-pay-pos/blob/master/point-of-sale/src/client/components/pages/App.tsx) file.
+Import the Mainnet endpoint, along with USDC's mint address and icon in the [`client/components/pages/App.tsx`](https://github.com/solana-labs/solana-pay/blob/master/point-of-sale/src/client/components/pages/App.tsx) file.
 ```tsx
 import { MAINNET_ENDPOINT, MAINNET_USDC_MINT } from '../../utils/constants';
 import { USDCIcon } from '../images/USDCIcon';
@@ -115,9 +115,9 @@ When you're done, it should look like this:
 
 ## Using Transaction Requests
 
-[Transaction Requests](../SPEC.md#specification-transaction-request) are a new feature in Stream Pay.
+[Transaction Requests](../SPEC.md#specification-transaction-request) are a new feature in Solana Pay.
 
-In the [`client/components/pages/App.tsx`](https://github.com/stream-protocol/stream-pay-pos/blob/master/point-of-sale/src/client/components/pages/App.tsx) file, toggle these lines:
+In the [`client/components/pages/App.tsx`](https://github.com/solana-labs/solana-pay/blob/master/point-of-sale/src/client/components/pages/App.tsx) file, toggle these lines:
 
 ```tsx
     // Toggle comments on these lines to use transaction requests instead of transfer requests.
@@ -133,7 +133,7 @@ When you're done, it should look like this:
     const link = useMemo(() => new URL(`${baseURL}/api/`), [baseURL]);
 ```
 
-The generated QR codes in the app should now use transaction requests. To see what's going on and customize it, check out the [`server/api/index.ts`](https://github.com/stream-protocol/stream-pay-pos/blob/master/point-of-sale/src/server/api/index.ts) file.
+The generated QR codes in the app should now use transaction requests. To see what's going on and customize it, check out the [`server/api/index.ts`](https://github.com/solana-labs/solana-pay/blob/master/point-of-sale/src/server/api/index.ts) file.
 
 ## Deploying to Vercel
 
@@ -141,7 +141,7 @@ You can deploy this point of sale app to Vercel with a few clicks.
 
 ### 1. Fork the project
 
-Fork the Stream Pay repository
+Fork the Solana Pay repository
 
 ### 2. Login to Vercel
 
@@ -175,7 +175,7 @@ https://<YOUR DEPLOYMENT URL>?recipient=<YOUR WALLET ADDRESS>&label=Your+Store+N
 
 ## License
 
-The Stream Pay´s Point of Sale app is open source and available under the Apache License, Version 2.0. See the [LICENSE](./LICENSE) file for more info.
+The Solana Pay Point of Sale app is open source and available under the Apache License, Version 2.0. See the [LICENSE](./LICENSE) file for more info.
 
 <!-- Links -->
 

@@ -9,7 +9,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Solana Pay Docs',
-    tagline: 'Solana Pay is a standard protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services.',
+    tagline:
+        'Solana Pay is a standard protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services.',
     url: 'https://docs.solanapay.com',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -28,7 +29,7 @@ const config = {
                     sidebarCollapsed: false,
                     path: 'src',
                     routeBasePath: '/',
-                    editUrl: 'https://github.com/stream-protocol/stream-pay-pos/tree/master/docs',
+                    editUrl: 'https://github.com/solana-labs/solana-pay/tree/master/docs',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -38,63 +39,68 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-        colorMode: {
-            defaultMode: 'dark',
-            respectPrefersColorScheme: true,
-        },
-        navbar: {
-            logo: {
-                alt: 'Solana Logo',
-                src: 'img/logo-horizontal.svg',
-                srcDark: 'img/logo-horizontal-dark.svg',
+            colorMode: {
+                defaultMode: 'dark',
+                respectPrefersColorScheme: true,
             },
-            items: [{
-                    href: 'https://github.com/stream-protocol/stream-pay-pos',
-                    label: 'GitHub',
-                    position: 'right',
+            navbar: {
+                logo: {
+                    alt: 'Solana Logo',
+                    src: 'img/logo-horizontal.svg',
+                    srcDark: 'img/logo-horizontal-dark.svg',
                 },
-                {
-                    to: 'api',
-                    label: 'API Reference',
-                    position: 'left',
-                },
-            ],
-        },
-        footer: {
-            style: 'dark',
-            links: [{
-                    title: 'Community',
-                    items: [{
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/pquxPsq',
-                        },
-                        {
-                            label: 'Twitter',
-                            href: 'https://twitter.com/solana',
-                        },
-                        {
-                            label: 'Forums',
-                            href: 'https://forums.solana.com',
-                        },
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [{
+                items: [
+                    {
+                        href: 'https://github.com/solana-labs/solana-pay',
                         label: 'GitHub',
-                        href: 'https://github.com/stream-protocol/stream-pay-pos',
-                    }, ],
-                },
-            ],
-            copyright: `Copyright © ${new Date().getFullYear()} Solana Foundation`,
-        },
-        prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
-        },
-    }),
+                        position: 'right',
+                    },
+                    {
+                        to: 'api',
+                        label: 'API Reference',
+                        position: 'left',
+                    },
+                ],
+            },
+            footer: {
+                style: 'dark',
+                links: [
+                    {
+                        title: 'Community',
+                        items: [
+                            {
+                                label: 'Discord',
+                                href: 'https://discordapp.com/invite/pquxPsq',
+                            },
+                            {
+                                label: 'Twitter',
+                                href: 'https://twitter.com/solana',
+                            },
+                            {
+                                label: 'Forums',
+                                href: 'https://forums.solana.com',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'More',
+                        items: [
+                            {
+                                label: 'GitHub',
+                                href: 'https://github.com/solana-labs/solana-pay',
+                            },
+                        ],
+                    },
+                ],
+                copyright: `Copyright © ${new Date().getFullYear()} Solana Foundation`,
+            },
+            prism: {
+                theme: lightCodeTheme,
+                darkTheme: darkCodeTheme,
+            },
+        }),
 
     plugins: [
         [

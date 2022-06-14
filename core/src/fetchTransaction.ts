@@ -15,7 +15,7 @@ export class FetchTransactionError extends Error {
  *
  * @param connection - A connection to the cluster.
  * @param account - Account that may sign the transaction.
- * @param link - `link` in the [Solana Pay spec](https://github.com/stream-protocol/stream-pay-pos/blob/master/SPEC.md#link).
+ * @param link - `link` in the [Solana Pay spec](https://github.com/solana-labs/solana-pay/blob/master/SPEC.md#link).
  * @param options - Options for `getRecentBlockhash`.
  *
  * @throws {FetchTransactionError}

@@ -1,12 +1,12 @@
 ---
-title: Stream Pay Specification
+title: Solana Pay Specification
 slug: /spec
 ---
 
-# Stream Pay / Solana Pay Specification
+# Solana Pay Specification
 
 ## Summary
-A standard protocol to encode USDC and Solana transaction requests within URLs to enable payments and other use cases.
+A standard protocol to encode Solana transaction requests within URLs to enable payments and other use cases.
 
 Rough consensus on this spec has been reached, and implementations exist in Phantom, FTX, and Slope.
 
@@ -253,4 +253,4 @@ Additional formats and fields may be incorporated into this specification to ena
 
 Please open a Github issue to propose changes to the specification in order to solicit feedback from application and wallet developers.
 
-[An actual example of such a proposal.](https://github.com/stream-protocol/stream-pay-pos/issues/26)
+[An actual example of such a proposal.](https://github.com/solana-labs/solana-pay/issues/26)

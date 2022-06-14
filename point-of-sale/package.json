@@ -2,8 +2,8 @@
     "private": true,
     "name": "@solana/pay-point-of-sale",
     "version": "0.0.0",
-    "author": "Stream Maintainers <maintainers@streamprotocol.org>",
-    "repository": "https://github.com/stream-protocol/stream-pay-pos",
+    "author": "Solana Maintainers <maintainers@solana.foundation>",
+    "repository": "https://github.com/solana-labs/solana-pay",
     "license": "Apache-2.0",
     "scripts": {
         "clean": "shx rm -rf .next",

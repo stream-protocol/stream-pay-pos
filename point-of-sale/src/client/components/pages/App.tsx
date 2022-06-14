@@ -13,7 +13,7 @@ import { FullscreenProvider } from '../contexts/FullscreenProvider';
 import { PaymentProvider } from '../contexts/PaymentProvider';
 import { ThemeProvider } from '../contexts/ThemeProvider';
 import { TransactionsProvider } from '../contexts/TransactionsProvider';
-import { StreamPayLogo } from '../images/StreamPayLogo';
+import { SolanaPayLogo } from '../images/SolanaPayLogo';
 import { SOLIcon } from '../images/SOLIcon';
 import css from './App.module.css';
 
@@ -69,8 +69,8 @@ const App: FC<AppProps> & { getInitialProps(appContext: AppContext): Promise<App
                                     recipient={recipient}
                                     label={label}
                                     message={message}
-                                    symbol="USDC"
-                                    icon={<USDCIcon />}
+                                    symbol="SOL"
+                                    icon={<SOLIcon />}
                                     decimals={9}
                                     minDecimals={1}
                                     connectWallet={connectWallet}
@@ -86,7 +86,7 @@ const App: FC<AppProps> & { getInitialProps(appContext: AppContext): Promise<App
                     </ConnectionProvider>
                 ) : (
                     <div className={css.logo}>
-                        <StreamPayLogo width={240} height={88} />
+                        <SolanaPayLogo width={240} height={88} />
                     </div>
                 )}
             </FullscreenProvider>

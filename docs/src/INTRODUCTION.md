@@ -1,11 +1,11 @@
 ---
-title: Stream Pay
+title: Solana  Pay
 slug: /
 ---
 
-# Stream Pay
+# Solana Pay
 
-Stream Pay / Solana is a standard protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services.
+Solana Pay is a standard protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services.
 
 [Read the specification.](SPEC.md)
 
@@ -25,25 +25,31 @@ The Solana blockchain confirms transactions in less than a second and costs on a
 
 **†** Includes support for [Transaction Requests](SPEC.md#specification-transaction-request)
 
-## How to use Stream Pay / Solana Pay
+## How to use Solana Pay
 
 ### Accept payments in your web app
 
-Use the [`@solana/pay` JavaScript SDK](https://github.com/stream-protocol/stream-pay-pos/tree/master/core) to start accepting payments in your app today.
+Use the [`@solana/pay` JavaScript SDK](https://github.com/solana-labs/solana-pay/tree/master/core) to start accepting payments in your app today.
 
 ### Accept payments in person
 
-Run the open-source [Stream Pay Point of Sale app](https://github.com/stream-protocol/stream-pay-pos/tree/master/point-of-sale) to start accepting payments in-person.
+Run the open-source [Solana Pay Point of Sale app](https://github.com/solana-labs/solana-pay/tree/master/point-of-sale) to start accepting payments in-person.
 
 ## Getting Involved
 
-Stream Pay is an open standard to facilitate commerce on Stream Protocol. We are looking for more contributors to help develop the ecosystem. Here are a few ideas if you're looking to get involved.
+Solana Pay is an open standard to facilitate commerce on Solana. We are looking for more contributors to help develop the ecosystem. Here are a few ideas if you're looking to get involved.
 
-### e-Commerce Platform Integrations
+### Hackathon Projects
 
-To get as many merchants accepting payments on Stream Protocol as possible we need to provide easy ways to set up Stream Pay on all e-Commerce platforms.
+The [Solana Riptide Hackathon](https://solana.com/riptide) is happening right now. There's with a dedicated Payments track, presented by Visa.
 
-Stream Protocol / Solana has started a reference implementation for Shopify which you can see here to get a sense of how this might work.
+Here are some [Solana Pay hackathon ideas](https://www.figma.com/community/file/1070574785723157359) to get started thinking about how you can build the future of payments.
+
+### eCommerce Platform Integrations
+
+To get as many merchants accepting payments on Solana as possible we need to provide easy ways to set up Solana Pay on all eCommerce platforms.
+
+Solana Labs has started a reference implementation for Shopify which you can see here to get a sense of how this might work.
 
 Here are some of the top eCommerce platforms that we're looking to integrate to:
 
@@ -62,6 +68,6 @@ Do you have another idea? Feel free to open an issue to discuss it with the comm
 
 ## License
 
-Stream Pay is open source and available under the Apache License, Version 2.0.
+Solana Pay is open source and available under the Apache License, Version 2.0.
 
-![Stream Pay](./images/stream-pay.png)
+![Solana Pay](./images/solana-pay.png)

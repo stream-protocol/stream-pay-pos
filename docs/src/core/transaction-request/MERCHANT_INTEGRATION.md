@@ -3,9 +3,9 @@ title: Create a transaction request
 slug: /core/transaction-request/merchant-integration
 ---
 
-This section describes how a merchant can integrate Stream Pay / Solana Pay transaction requests into their payments flow.
+This section describes how a merchant can integrate Solana Pay transaction requests into their payments flow.
 
-This guide walks through an example of how you can configure a server to respond to a Stream Pay / Solana Pay  transaction request to initiate a simple native SOL or USDC transfer.
+This guide walks through an example of how you can configure a server to respond to a Solana Pay transaction request to initiate a simple native SOL transfer.
 
 A complete example can be found [here][4].
 
@@ -213,6 +213,6 @@ We recommend handling a customer session in a secure environment. Building a sec
 <!-- References -->
 
 [1]: https://nextjs.org/docs/api-routes/introduction
-[2]: https://github.com/stream-protocol/stream-pay-pos/tree/link-request/point-of-sale
-[3]: https://github.com/stream-protocol/stream-pay-pos/blob/link-request/SPEC.md#link
-[4]: https://github.com/stream-protocol/stream-pay-pos
+[2]: https://github.com/solana-labs/solana-pay/tree/link-request/point-of-sale
+[3]: https://github.com/solana-labs/solana-pay/blob/link-request/SPEC.md#link
+[4]: https://github.com/solana-labs/solana-pay
