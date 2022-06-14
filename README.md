@@ -10,12 +10,13 @@ The Solana blockchain confirms transactions in less than a second and costs on a
 
 ## Supporting Wallets
 
-Phantom † (iOS, Android)
-Solflare † (iOS, Android)
-Glow (iOS)
-Slope (iOS, Android)
-Crypto Please (iOS, Android)
-FTX (iOS, Android)
+- Phantom † (iOS, Android)
+- Solflare † (iOS, Android)
+- Glow (iOS)
+- Slope (iOS, Android)
+- Crypto Please (iOS, Android)
+- FTX (iOS, Android)
+- StreamPay (iOS, Android) (under construction)
 
 ## How to use StreamPOS / StreamPay
 
