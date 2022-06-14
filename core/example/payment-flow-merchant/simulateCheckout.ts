@@ -19,8 +19,8 @@ export async function simulateCheckout(): Promise<{
     reference: PublicKey;
 }> {
     return {
-        label: 'Stream Pay demo store',
-        message: 'Stream Pay Demo store - your order - #001234',
+        label: 'Jungle Cats store',
+        message: 'Jungle Cats store - your order - #001234',
         memo: 'JC#4098',
         amount: new BigNumber(1),
         reference: new Keypair().publicKey,

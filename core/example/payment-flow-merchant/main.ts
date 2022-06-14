@@ -1,18 +1,13 @@
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import BigNumber from 'bignumber.js';
-import {
-    encodeURL,
-    findTransactionSignature,
-    FindTransactionSignatureError,
-    validateTransactionSignature,
-} from '../../src';
+import { encodeURL, findReference, FindReferenceError, validateTransfer } from '../../src';
 import { MERCHANT_WALLET } from './constants';
 import { establishConnection } from './establishConnection';
 import { simulateCheckout } from './simulateCheckout';
 import { simulateWalletInteraction } from './simulateWalletInteraction';
 
 async function main() {
-    console.log("Let's simulate a StreamPay flow ... \n");
+    console.log("Let's simulate a Solana Pay flow ... \n");
     let paymentStatus: string;
 
     console.log('1. ✅ Establish connection to the cluster');
@@ -34,7 +29,7 @@ async function main() {
     /**
      * Create a payment request link
      *
-     * StreamPay uses a standard URL scheme across wallets for native SOL, USDC, STRM and SPL Token payments.
+     * Solana Pay uses a standard URL scheme across wallets for native SOL and SPL Token payments.
      * Several parameters are encoded within the link representing an intent to collect payment from a customer.
      */
     console.log('3. 💰 Create a payment request link \n');
@@ -76,12 +71,12 @@ async function main() {
         const interval = setInterval(async () => {
             console.count('Checking for transaction...');
             try {
-                signatureInfo = await findTransactionSignature(connection, reference, undefined, 'confirmed');
+                signatureInfo = await findReference(connection, reference, { finality: 'confirmed' });
                 console.log('\n 🖌  Signature found: ', signatureInfo.signature);
                 clearInterval(interval);
                 resolve(signatureInfo);
             } catch (error: any) {
-                if (!(error instanceof FindTransactionSignatureError)) {
+                if (!(error instanceof FindReferenceError)) {
                     console.error(error);
                     clearInterval(interval);
                     reject(error);
@@ -105,14 +100,7 @@ async function main() {
     console.log('\n6. 🔗 Validate transaction \n');
 
     try {
-        await validateTransactionSignature(
-            connection,
-            signature,
-            MERCHANT_WALLET,
-            amount,
-            undefined,
-            reference
-        );
+        await validateTransfer(connection, signature, { recipient: MERCHANT_WALLET, amount });
 
         // Update payment status
         paymentStatus = 'validated';

@@ -8,15 +8,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'StreamPay Docs',
-    tagline: 'StreamPay is a standard protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services.',
-    url: 'https://docs.streamprotocol.org',
+    title: 'Solana Pay Docs',
+    tagline: 'Solana Pay is a standard protocol and set of reference implementations that enable developers to incorporate decentralized payments into their apps and services.',
+    url: 'https://docs.solanapay.com',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'Stream Protocol / StreamDAO', // Usually your GitHub org/user name.
-    projectName: 'stream-pay', // Usually your repo name.
+    organizationName: 'solana-labs', // Usually your GitHub org/user name.
+    projectName: 'solana-pay', // Usually your repo name.
 
     presets: [
         [
@@ -28,7 +28,7 @@ const config = {
                     sidebarCollapsed: false,
                     path: 'src',
                     routeBasePath: '/',
-                    editUrl: 'https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/docs',
+                    editUrl: 'https://github.com/stream-protocol/stream-pay-pos/tree/master/docs',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -46,12 +46,12 @@ const config = {
         },
         navbar: {
             logo: {
-                alt: 'StreamPay Logo',
+                alt: 'Solana Logo',
                 src: 'img/logo-horizontal.svg',
                 srcDark: 'img/logo-horizontal-dark.svg',
             },
             items: [{
-                    href: 'https://github.com/stream-protocol/stream-pay',
+                    href: 'https://github.com/stream-protocol/stream-pay-pos',
                     label: 'GitHub',
                     position: 'right',
                 },
@@ -68,15 +68,15 @@ const config = {
                     title: 'Community',
                     items: [{
                             label: 'Discord',
-                            href: 'https://discord.gg/F6j96Z7WzG',
+                            href: 'https://discordapp.com/invite/pquxPsq',
                         },
                         {
                             label: 'Twitter',
-                            href: 'https://twitter.com/stream_protocol',
+                            href: 'https://twitter.com/solana',
                         },
                         {
                             label: 'Forums',
-                            href: 'https://forum.streamprotocol.org',
+                            href: 'https://forums.solana.com',
                         },
                     ],
                 },
@@ -84,11 +84,11 @@ const config = {
                     title: 'More',
                     items: [{
                         label: 'GitHub',
-                        href: 'https://github.com/stream-protocol/stream-pay',
+                        href: 'https://github.com/stream-protocol/stream-pay-pos',
                     }, ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} Stream Protocol`,
+            copyright: `Copyright © ${new Date().getFullYear()} Solana Foundation`,
         },
         prism: {
             theme: lightCodeTheme,
